@@ -17,7 +17,7 @@ st.set_page_config(
 # --------------------------
 st.markdown("""
 <style>
-.main { background-color: #F5FAF3; }
+.main { background-color: #F5FAE3; }
 .card {
     padding: 28px;
     background: black;
@@ -25,7 +25,7 @@ st.markdown("""
     box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
     text-align: center;
 }
-.title-text { font-size: 34px; font-weight:700; color:#2E7D32; margin-bottom:6px; }
+.title-text { font-size: 34px; font-weight:700; color:#2E7F32; margin-bottom:6px; }
 .small { color:#555; }
 </style>
 """, unsafe_allow_html=True)
@@ -99,5 +99,6 @@ with tab2:
         st.dataframe(df.head(200), use_container_width=True)
     except Exception:
         st.warning("Crop_recommendation.csv not found in the app folder.")
+
 
 
