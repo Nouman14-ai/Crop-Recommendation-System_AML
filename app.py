@@ -20,7 +20,7 @@ st.markdown("""
 .main { background-color: #F5FAF3; }
 .card {
     padding: 28px;
-    background: blue;
+    background: black;
     border-radius: 14px;
     box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
     text-align: center;
@@ -99,4 +99,5 @@ with tab2:
         st.dataframe(df.head(200), use_container_width=True)
     except Exception:
         st.warning("Crop_recommendation.csv not found in the app folder.")
+
 
